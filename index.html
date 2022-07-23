@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Drive Video Player</title>
 	<link rel="shortcut icon" href="https://bit.ly/samplefavicon" type="image/x-icon">
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
 </head>
 <body>
 	<style>
@@ -46,16 +43,16 @@
         if(!getParameterByName('id') || getParameterByName('ib')){
           var eid = prompt('Enter Drive Video ID :- ');
           embed = `
-<iframe width="560" height="315" 
+<iframe width="560" height="315"
 scrolling="no"
-src="${location.href}?id=${eid}" 
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+src="${location.href}?id=${eid}"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
 gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
           `;
           prompt('Here is Your Embed Code :- ',embed);
           window.location.href = window.location.href+'?id='+eid;
-        } 
+        }
         video = getParameterByName('id') ;
         if(getParameterByName('ib')){
             video = btoa(getParameterByName('ib'));
@@ -66,10 +63,10 @@ gyroscope; picture-in-picture" allowfullscreen>
 
 function getembed(){
             var code = `
-<iframe width="560" height="315" 
+<iframe width="560" height="315"
 scrolling="no"
-src="${location.href}?id=${video}" 
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+src="${location.href}?id=${video}"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
 gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
           `;
